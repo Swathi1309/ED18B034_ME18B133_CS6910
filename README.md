@@ -20,22 +20,13 @@ Next, run the `log_images()` function to plot one random sample image from each 
 The feedforward network has been implemented in the `feedforward()` function. To view an example of the predcited outputs for an image, run the code snippet under Question 2.
 
 ## Question 4
-We have executed five iterations of gridsearch to find the best model. We have specified the parameter dictionaries for each iteration. Run them one-by-one along with adjoining sweep codes to perform the sweeps in wandb interface. Analysing the charts and tables in wandb, we have identified the best model.
-
-## Question 6
-The following interesting observations have been made from the parallel plots, scaterred plots and accuracy charts:
+Five iterations of gridsearch have been executed to find the best model. The parameter dictionaries for each iteration have been specified. Run them one-by-one along with adjoining sweep codes to perform the sweeps in wandb interface. Analysing the charts and tables in wandb, the best model has been identified.
   
 ## Question 7
-For the confusion matrix, run the corresponding cells in the code.
+For the confusion matrix of the best model obtained above, run the corresponding cells in the code.
 
 ## Question 8
-Modify the loss function `Loss()` and the derivative of loss function `dLoss()` by adding 'l2' string as the last argument where these functions are called (in `loss_and_accuracy()` and `feedforward()` functions). Now run the commands in the cell under Question 8 to log its values into wandb. Check the `validation_accuracy` of this model and our best model to get an idea of the difference in performance.
+Modify the loss function `Loss()` and the derivative of loss function `dLoss()` by adding 'l2' string as the last argument where these functions are called (in `loss_and_accuracy()` and `feedforward()` functions). Now run the commands in the cell under **Question 8** to log its values into wandb. Check the `validation_accuracy` of this model and our best model to get an idea of the difference in performance.
 
 ## Question 10
-The following hyperparameters are observed to be critical for model selection:
-  
-  
-Hence we would use combinations of these. The three combinations to run grid search are:
-  
-  
-  
+The three hyperparameter combinations to run for the MNIST dataset are given in the parameters dictionary. Execute the cells under **Question 10** to load the MNIST data set, and to train the model and log the accuracies and losses in Wandb.
