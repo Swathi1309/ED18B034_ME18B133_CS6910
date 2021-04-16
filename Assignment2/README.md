@@ -18,3 +18,6 @@ load_data(dir_train, dir_test, batch)
 ```
 > Note: Run the Define Parameters before initializing the model.
 - Run the hyperparameter sweeps to obtain the best model.
+
+## Part C
+- We designed a code to help the blind. This code uses the tiny version of yolov3 to detect household items and prompt via speech, the detected objects which are essential in giving them a sense of direction and path. This code has been fine tuned to detect objects of medium sizes and above which provide a basic understanding of what is placed where. It can be manually tuned to detect much smaller objects too.
